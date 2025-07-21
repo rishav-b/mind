@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read CSV File</title>
+    <link rel = "stylesheet" href = "styles.css"></link>
+</head>
+<body>
+    <h1><center>MIND v0</center></h1>
+    <center><i><p>Multilayer INteraction Designer</p></i></center>
+    <div id = 'controls'>
+        Host-Microbe Data: <input type="file" id="hme" accept=".csv" />
+        Host-Host Data: <input type="file" id="hhe" accept=".csv" />
+        <button id = "drawGraph">Draw/Reset Graph</button>
+        <button id = "download">Download (SVG)</button>
+    </div>
+    
+    <div id="cy" style="width: 1500px; height: 1000px;"></div>
+    
+
+    <script src="https://unpkg.com/cytoscape@latest/dist/cytoscape.min.js"></script>
+    <script src="https://unpkg.com/cytoscape-svg"></script>
+    <script src = "main.js"></script>
+</body>
+</html>
