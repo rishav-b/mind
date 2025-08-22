@@ -183,7 +183,7 @@ function extract_data(content) {
                 padding: 10,
                 spacingFactor: 1,
                 animate: false,
-                direction: 'TB',
+                direction: 'downward',
                 roots: cy.nodes().filter(n => n.data('layer') === 1),
                 sort: (a, b) => a.data('layer') - b.data('layer')
             }).run();
@@ -201,4 +201,5 @@ function extract_data(content) {
 
                 URL.revokeObjectURL(url);
             });
+
         });
